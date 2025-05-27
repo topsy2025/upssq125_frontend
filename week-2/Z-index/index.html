@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index property</title>
+</head>
+<body>
+    <style>
+        span{
+            color: red;
+        }
+        #tree_img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+    </style>
+    <h2>Z-index property</h2>
+    <p>When elements are positioned,they can overlap</p>
+    <p><span><strong>The Z-index</strong></span>property specify the stack order property of an element. </p>
+    <p>An element can have either a positive or a negative stack order</p>
+        <h1>this is an iroko tree</h1>
+        <img src="/assets/img_tree (3).png" alt="tree" id="tree_img">
+     <p>Because the image has Z-index of -1 shall be placed behind the text,this show that the higher the z-index,the higher the element is in the stack while the lower the z-index,the lower the element is in the stack</p>
+    
+</body>
+</html>
