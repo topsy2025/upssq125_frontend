@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .name{
+            background-color: blue;
+             .half{
+                width:50%;
+              }
+              .quarter{
+                width:25%;
+              }
+              .third-quarter{
+                width:75%
+              }
+            
+        }
+        .email{
+            background-color: aqua;
+        
+        }
+        .phone{
+            background-color: blueviolet;
+            
+        }
+        .address{
+            background-color: red;
+        }
+        div{
+            padding:24px;
+        }
+        /* media query */
+        @media (min-width:375px){
+              .half{
+                width:50%;
+              }
+        }
+        /* media query */
+        @media (min-width:576px){
+              .quarter{
+                width:25%;
+              }
+        }
+        /* media query */
+        @media (min-width:768px){
+            .third-quarter{
+                width:75%
+            }
+        }
+
+          
+
+
+
+    </style>
+</head>
+<body>
+    <div class="name half quarter"></div>
+    <div class="email half quarter"></div>
+    <div class="phone half"></div>
+    <div class="address half third-quarter"></div>
+    
+</body>
+</html>

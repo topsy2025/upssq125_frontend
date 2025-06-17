@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive web design(RWD)</title>
+    <style>
+        #table{
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse:collapse;
+            width: 100px;
+        }
+        #table tr td{
+          border: 1px solid #dddddd;
+          padding: 8px;
+        }
+        #table th{
+            border: 1px solid #dddddd;
+            padding: 8px;
+        }
+        #table th{
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04aa60;
+            color: white;
+        }
+        #table tr:nth-child(Even){
+          background-color: f2f2f2;
+          padding: 8px;  
+        }
+        #table tr:hover{
+            background-color: #dddddd;
+        } 
+    </style>
+</head>
+<body>
+    <h1 class="main-Heading">Responsive web design(RWD)</h1>
+    <p class="subtitle-main-heading">Responsive web design(RWD) is a design approached that ensure a website looks and functions well across a wide range of devices and screen sizes. <span>- <strong>From mobile phones to tablet to desktop computers</strong></span> <span>-</span>Without requiring separate version of site.</p>
+    <h2 class="heading-2">Key concepts of responsive web design:</h2>
+    <ol class="lists">
+        <li class="list-item">
+            <div class="list-item-content">
+            <h4 class="heading-4">fluid grids:</h4>
+            <p>Layout are build using relative unit like percentage instead of fixed unit like pixels allowing element to resize based on the screen</p>
+            </div>
+        </li>
+        <li class="list-item">
+            <div>
+                <h4 class="heading-4">Flexible images:</h4>
+                <p>Images scale within their containing elements so they overflow or distort on different screen sizes</p>
+            </div>
+        </li>
+        <li class="list item">
+            <div class="list-item-content">
+                <h4 class="heading-4">Fluid grids:</h4>
+                <p>Layout are built using relative unit like percentage instead of fixed unit like pixel allowing element to resize based on the screen</p>
+            </div>
+        </li>
+        <li class="list item">
+            <div class="list-item-content">
+                <h4 class="heading-4">Media query</h4>
+                <p>Css rules that apply style based on the device characteristics such as screen width,height,resolution or orientation.</p>
+                <h5>Example:</h5>
+                <pre><code>
+                    @media (max-width: 768px) {
+                        .menu{
+                display: none;
+            }
+        }
+            </code></pre>
+        <h4 class="list item">Mobile-first approach:</h4>
+                <p>Design start with the smallest screen size and scale up,ensuring a good user experience on mobile design first.</p>
+            </div>
+        </li>
+    </ol>
+    <h2 class="grid-option">Gride options in responsive design</h2>
+    <ul class="grid-option-list">
+        <li class="grid-option-item">
+            <h4 class="heading-4">Css grid layout:</h4>
+            <p>Allows for complex layout with rules and column</p>
+         </li>
+         <li class="grid-option-item">
+            <h4 class="heading-4">Flexbox</h4>
+            <p>Provides a one dymational layout model that is great for alligning item in a row or color making it easier to create flexible layout.</p>            
+        </li>
+        <li class="grid-option-items">
+            <h4 class="heading-4">Frame work:</h4>
+            <p>Framework like bulume,bootstrap,w3css,tailwind css and foundation provides prebuilt responsive grid systems that can be easily integrayed into project.</p>            
+        </li>
+    </ul>
+    <table>
+        <tr>
+            <th>Screen size</th>
+            <th>Screen size code</th>
+            <th>Class prefix</th>
+            <th>Column count</th>
+        </tr>
+        <tr>
+            <td>(Less than 576px)</td>
+            <td>Extra small(xx)</td>
+            <td>None</td>
+            <td>1-12</td>
+        </tr>
+        <tr>
+            <td>(>=576px)</td>
+            <td>small(sm)</td>
+            <td>.co.sm-</td>
+            <td>(>=768px)</td>
+        </tr>
+        <tr>
+            <td>(>=576px)</td>
+            <td>Medium (md)</td>
+            <td>.col-md</td>
+            <td>1-12</td>
+        </tr>
+        <tr>
+            <td>(>=992px)</td>
+            <td>Large(lg)</td>
+            <td>.col-lg</td>
+            <td>1-12</td>
+        </tr>
+        <tr>
+            <td>(>=1200px)</td>
+            <td>Extra large(Xl)</td>
+            <td>.col-Xl</td>
+            <td>1-12</td>
+        </tr>
+        <tr>
+            <td>(>=1400px)</td>
+            <td>Extra extra large()XXl</td>
+            <td>.col-XXl</td>
+            <td>1-12</td>
+        </tr>
+    </table>
+</body>
+</html>
