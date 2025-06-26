@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Javascript to your page</title>
-    <script type="" src="index.js"></script>
+    <script src="index.js"></script>
 
 </head>
 <body>
@@ -31,7 +31,7 @@
     <br>
     <h3>In-line Javascript Handlers</h3>
     <p>Sometimes javascript can be included inside the html element.This is called in-line javascript</p>
-    <button onclick="create paragraph">Click Me</button>
+    <button onclick="createParagraph ()">Click Me</button>
     <br>
     <p>This demonstrate exactly the same functionality as the previous two section except that the button element include an inline <i>onclick handler</i>to make the functions ru;le</p>
     <br>
@@ -39,7 +39,23 @@
     <p><strong>Please in your life,dont try this,it is bad practice to pollute ypour html with javascript and it is insufficient</strong><span>-</span>you have to include the onclick="createparagraph" on every button you wanmt the javascript to apply to</p>
     <br>
     <h3>Using Add Eventlistening</h3>
-    <p>Instead of including javascript in your html</p>
+    <p>Instead of including javascript in your html,use a pure javascript construct.The queryselectorAllfunction allow you to select all the buttons on your page.You can then look through the button assigning an handler for each using addEventlistener functions</p>
+    <hr>
+    <br>
+    <h3>Script Loading Strategies</h3>
+    <p>All the html in the page is loaded in order which they appear.If you are using javascript to manipulate in the page (or more accurately the DON)your code wont work if the javascript is loaded and parsed before the html you are trying to do something to</p>
+    <br>
+    <p>They are a few different strategies to make sure your javascript only run after the html is parsed</p>
+    <ul>
+        <li>In the external javascript example above which we delected,the script element is placed at the bottom of the body of the document and therefore only runs after the rest of the html is parsed</li>
+        <li>In the external javascript above,the script element is placed in the head of the document before the html is parsed.But because we are using script type"module"the code is treated as a module and the browser wait for all html to be processed before executed javascript module.(you can also placed external script at the bottom of the body.But if there is a lot of html and the network is slow,it may take a lot of time before the browser can even startfetching and loading the script,so placing the javascript in the head is better</li>
+        <li>If you still want to use the non-module script in the document head,which could block the whole page from displaying in the screen and could cause error because it execute before the html is parsed
+          <ul>
+            <li>For external script,you should add the defer(or if you dont need the html to be ready they are synced attribute on the script element)</li>
+            <li>For internal script,you should wrap the code in a domcontentloadedEventlistener</li>
+          </ul>
+        </li>
+    </ul>
 
 </body>
 </html>
