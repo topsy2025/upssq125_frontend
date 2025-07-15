@@ -1,0 +1,47 @@
+#main-timer{
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-inline: 1rem;
+}
+span{
+    font-size: 5rem;
+    font-weight: bold;
+}
+.timer-ctrl{
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 1rem;
+    padding-inline: 0rem;
+    gap: 3px;
+}
+.btn{
+    margin-inline: 0.5rem;
+    padding-block: 0.5rem;
+    border-radius: 10px;
+}
+.start-timer{
+    color: black;
+    background-color: green;
+    font-size: medium;
+    font-weight: bold;
+}
+.stop-timer{
+    color: black;
+    background-color: red;
+    font-size: medium;
+    font-weight: bold;
+}
+.reset-timer{
+    color: black;
+    background-color: grey;
+    font-size: medium;
+    font-weight: bold;
+}

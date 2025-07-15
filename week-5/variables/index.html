@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h2>Variables</h2>
+    <p>Javascript variables can be declared in four ways </p>
+    <ol>
+        <li>Automatically</li>
+        <li>Using var</li>
+        <li>Using let</li>
+        <li>Using const</li>
+    </ol>
+    <p>you are creating variables automatically, the variable are declared used. Note: it is good practices to declare your variables before using them. Using var, var x =5:, var y=6 var z=x+y</p>
+    <p>Note: the var keyword was used in all javasript code from 1996 to 2005. the let and the const keyword were added to javascript in 2015, the var keyword should only be used in code written for older browsers Using let, let x=5:, let y=6:, let z=x+y:, Using const, const x=5:, const y=6:, const z=x+y:,</p>
+    <p>const price1=7:,
+    const price2=6:
+    let price1+price2=price3: </p>
+    <p>Note: Always use const if the value wll not change, only use let if you  can not use const, only use val if you must support old browsers</p>
+    <h3>Javascript identifiers</h3>
+    <p>All javascript variables must be identidied with unique name. this unique are called identifiers. identifiers can be short name like x and y or more discreet like age, sum total volume. the general rules for construting variables names are 1. names can contain letters digits, underscores and $ signs. 2. names must begin with a letter. 3. names can also begin with $ signs and underscore but we will not use it. 4. names are case sensitive small y and big y are different variables. 5. reserved word like javascript keyword can not be used as variables names </p>
+    <h3>Assignment Operators</h3>
+    <p>in javascript the sign = is an assignment Operators not an equal to operators. in mathematics, this does not make sense x=x+5, in javascript, it makes sense, it assign the value of x+5 to x, it calculate the value of x+5 into x, the value of x is incremented by 5. Note: the eqaul too perators in mathematics is written as = in javascript</p>
+    <h3>Javascript Datatypes</h3>
+    <p>javascript variables can hold number like 100 and text value like victor peter . in programming, text value are called text string. javascript can handles many types of data but for now, let think of number and strings. string are written inside double or single quote, numbers are written without quote if you put a number in quote, it will be treated as a text string </p>
+    <p>Any variables declare with let has a block scope, also any variables declared with let must be declared before use. variable declared can not be declared in the same scope. Before 2015, javascript didn't have block scope. javascript only has global and function scope</p>
+    <h3>Whats scope</h3>
+    <p> In javascript, scope refers to the accessibility or feasibility of varaibles, where in you code,the variables can be used</p>
+    <h3>Global scope</h3>
+    <p>Any variables decalared outside any functions of block has a global scope. they can be assesed by any where in your code in the file or content Note: overusing your variables can cause problems </p>
+    <h3>Function scope</h3>
+    <p>variables declared inside a function are only assessable within that functions eg</p>
+    <h3>Block scope</h3>
+    <p> variables declared with let or const inside a block ae only assesible within that block </p>
+    <h3>scope chain</h3>
+    <p>when accessing a variable, javascript 2. when it doesnt find the value, it goes up to the parent scope and continue until it reach the global scope. you can not </p>
+    <p id="demo"></p>
+    <script src="./index.js"></script>
+    <script>
+        const pie=3.14
+        let person='favor'
+        document.getElementById("demo").innerHTML=pie+ 'br'+ person+ 'br' + answer
+    </script>
+</body>
+</html>
